@@ -4,6 +4,6 @@ A simple Crowdsec bouncer that passes decisions to a Galle instance that will pr
 
 ## Usage
 
-    python galle.py <path to ini config file>
+    python bouncer.py <path to ini config file>
 
 A sample config file and Dockerfile is provided.
