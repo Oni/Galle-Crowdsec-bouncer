@@ -1,0 +1,4 @@
+*.py[cod]
+
+py_venv/
+makefile.vars
