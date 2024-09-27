@@ -113,7 +113,10 @@ def main() -> int:
     while True:
         try:
             client.run()
-        except requests.exceptions.ConnectTimeout:
+        except (
+            requests.exceptions.ConnectTimeout,
+            requests.exceptions.ConnectionError,
+        ):
             LOG.error(
                 "Could not reach crowdsec at '%s': retry in a few seconds",
                 crowdsec_lapi_url,
